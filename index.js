@@ -40,8 +40,9 @@ app.post('/login', (req, resp) => {
 })
 
 
+const hostname = '0.0.0.0;'
 const PORT = process.env.PORT || 4000;
 
-app.listen(PORT, () => {
+app.listen(PORT, hostname, () => {
     console.log('==== listening to port:', PORT)
 })
